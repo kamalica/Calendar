@@ -28,11 +28,65 @@
   },
   {
     "id": 4,
+    "date": "2025-07-01",
+    "startTime": "13:00",
+    "endTime": "14:30",
+    "title": "Marketing Strategy",
+    "description": "Plan next quarter campaigns",
+    "color": "#ffb347"
+  },
+  {
+    "id": 5,
+    "date": "2025-07-05",
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "title": "DevOps Meeting",
+    "description": "Infrastructure discussion",
+    "color": "#00bfa5"
+  },
+  {
+    "id": 6,
+    "date": "2025-07-10",
+    "startTime": "15:30",
+    "endTime": "16:30",
+    "title": "Bug Triage",
+    "description": "Critical bug fixes review",
+    "color": "#f67280"
+  },
+  {
+    "id": 7,
+    "date": "2025-07-15",
+    "startTime": "09:30",
+    "endTime": "10:30",
+    "title": "Feature Planning",
+    "description": "Plan new features for Q3",
+    "color": "#36cfc9"
+  },
+  {
+    "id": 8,
+    "date": "2025-07-18",
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "title": "Performance Review",
+    "description": "Mid-year employee evaluations",
+    "color": "#a29bfe"
+  },
+  {
+    "id": 9,
+    "date": "2025-07-25",
+    "startTime": "16:00",
+    "endTime": "17:00",
+    "title": "Town Hall",
+    "description": "All-hands company meeting",
+    "color": "#ff7675"
+  },
+  {
+    "id": 10,
     "date": "2025-07-28",
     "startTime": "15:00",
-    "endTime": "12:00",
-    "title": "Design Review",
-    "description": "Mockup discussion",
+    "endTime": "16:00",
+    "title": "QA Testing",
+    "description": "Pre-release validation",
     "color": "#6a67ce"
   }
 ]
