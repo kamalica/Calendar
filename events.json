@@ -88,5 +88,32 @@
     "title": "QA Testing",
     "description": "Pre-release validation",
     "color": "#6a67ce"
+  },
+  {
+    "id": 11,
+    "date": "2025-06-26",
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "title": "Sprint Planning",
+    "description": "Plan tasks for Sprint 21",
+    "color": "#1abc9c"
+  },
+  {
+    "id": 12,
+    "date": "2025-06-28",
+    "startTime": "13:30",
+    "endTime": "14:30",
+    "title": "Content Review",
+    "description": "Review blog and social posts",
+    "color": "#3498db"
+  },
+  {
+    "id": 13,
+    "date": "2025-06-30",
+    "startTime": "15:00",
+    "endTime": "16:00",
+    "title": "Backend Refactor",
+    "description": "Codebase cleanup discussion",
+    "color": "#9b59b6"
   }
 ]
