@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "date": "2025-06-24",
+    "date": "2025-06-22",
     "startTime": "09:00",
     "endTime": "10:00",
     "title": "Team Sync",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "date": "2025-06-24",
+    "date": "2025-06-20",
     "startTime": "14:00",
     "endTime": "15:00",
     "title": "Client Call",
@@ -21,6 +21,15 @@
     "id": 3,
     "date": "2025-06-27",
     "startTime": "11:00",
+    "endTime": "12:00",
+    "title": "Design Review",
+    "description": "Mockup discussion",
+    "color": "#6a67ce"
+  },
+  {
+    "id": 4,
+    "date": "2025-07-28",
+    "startTime": "15:00",
     "endTime": "12:00",
     "title": "Design Review",
     "description": "Mockup discussion",

@@ -1,31 +1,13 @@
 let currentDate = new Date();
-let events = [
-  {
-    date: "2025-06-24",
-    startTime: "09:00",
-    endTime: "10:00",
-    title: "Team Sync",
-    color: "#f6be23"
-  },
-  {
-    date: "2025-06-24",
-    startTime: "14:00",
-    endTime: "15:00",
-    title: "Client Call",
-    color: "#ff6f91"
-  },
-  {
-    date: "2025-06-27",
-    startTime: "11:00",
-    endTime: "12:00",
-    title: "Design Review",
-    color: "#6a67ce"
-  }
-];
+let events = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderCalendar();
   initDropdowns();
+
+  // Fetch events from events.json dynamically
+  loadEvents().then(() => {
+    renderCalendar();
+  });
 
   document.getElementById("prevBtn").addEventListener("click", () => {
     currentDate.setMonth(currentDate.getMonth() - 1);
@@ -57,10 +39,21 @@ document.addEventListener("DOMContentLoaded", () => {
       color: document.getElementById("color").value
     };
     events.push(newEvent);
-    renderCalendar();
+    renderCalendar(); // Update view
     e.target.reset();
   });
 });
+
+// Load events from events.json
+async function loadEvents() {
+  try {
+    const response = await fetch("events.json");
+    if (!response.ok) throw new Error("Failed to load events.json");
+    events = await response.json();
+  } catch (error) {
+    console.error("Error loading events.json:", error);
+  }
+}
 
 function initDropdowns() {
   const monthSelect = document.getElementById("monthSelect");

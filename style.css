@@ -1,3 +1,4 @@
+/* Reset and Base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,12 +13,14 @@ html, body {
   overflow: hidden;
 }
 
+/* App Layout */
 .app-container {
   height: 100vh;
   display: flex;
   flex-direction: row;
 }
 
+/* Left Panel: Event Form */
 .event-form {
   flex: 1;
   background: #ffffff;
@@ -37,7 +40,9 @@ html, body {
   gap: 10px;
 }
 
-.event-form input, .event-form button, .event-form select {
+.event-form input,
+.event-form button,
+.event-form select {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -49,8 +54,14 @@ html, body {
   color: white;
   border: none;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
+.event-form button:hover {
+  background-color: #8b74a3;
+}
+
+/* Right Panel: Calendar Section */
 .calendar-section {
   flex: 3;
   display: flex;
@@ -63,13 +74,14 @@ html, body {
   display: flex;
   flex-direction: column;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 16px;
   height: 100%;
   overflow-y: auto;
 }
 
+/* Header */
 h1 {
   text-align: center;
   color: #6a0dad;
@@ -80,53 +92,74 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .calendar-header h2 {
   color: #6a0dad;
+  font-size: 20px;
 }
 
 .calendar-header button {
   background: #d8b5ff;
   border: none;
-  padding: 10px 16px;
-  border-radius: 8px;
+  padding: 8px 14px;
+  border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
+.calendar-header button:hover {
+  background: #c2a1ec;
+}
+
+/* Grid Layout */
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 12px;
+  gap: 8px;
   flex: 1;
+  padding: 10px;
 }
 
+/* Day Cells */
 .day {
   background: #f1e6ff;
-  padding: 10px;
-  border-radius: 10px;
-  min-height: 120px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  min-height: 90px;
   position: relative;
+  font-size: 12px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s;
+}
+
+.day:hover {
+  background: #e4d4ff;
 }
 
 .date-number {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
   display: block;
-  margin-bottom: 5px;
 }
 
+/* Events */
 .event {
-  margin-top: 8px;
-  padding: 4px;
-  border-radius: 5px;
+  margin-top: 4px;
+  padding: 3px 5px;
+  border-radius: 4px;
+  font-size: 11px;
+  background: #e0d1fa;
   color: #000;
-  font-size: 12px;
-  background: #eee;
   word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
+/* For empty cells */
 .empty {
   background: transparent;
+  box-shadow: none;
 }
