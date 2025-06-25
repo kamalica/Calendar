@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Light Violet Calendar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- Left Panel for Event Creation -->
+    <div class="event-form">
+      <h2>Create Event</h2>
+      <form id="createEventForm">
+        <input type="date" id="eventDate" required />
+        <input type="time" id="startTime" required />
+        <input type="time" id="endTime" required />
+        <input type="text" id="title" placeholder="Event Title" required />
+        <input type="color" id="color" value="#a88fbd" />
+        <button type="submit">Add Event</button>
+      </form>
+
+      <h3>Jump to:</h3>
+      <select id="monthSelect"></select>
+      <select id="yearSelect"></select>
+    </div>
+
+    <!-- Calendar Display -->
+    <div class="calendar-section">
+      <h1>Calendar</h1>
+      <div class="calendar-container">
+        <div class="calendar-header">
+          <button id="prevBtn">←</button>
+          <h2 id="monthLabel"></h2>
+          <button id="nextBtn">→</button>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

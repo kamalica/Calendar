@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "date": "2025-06-24",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "title": "Team Sync",
+    "description": "Daily stand-up meeting",
+    "color": "#f6be23"
+  },
+  {
+    "id": 2,
+    "date": "2025-06-24",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "title": "Client Call",
+    "description": "Monthly review with client",
+    "color": "#ff6f91"
+  },
+  {
+    "id": 3,
+    "date": "2025-06-27",
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "title": "Design Review",
+    "description": "Mockup discussion",
+    "color": "#6a67ce"
+  }
+]
